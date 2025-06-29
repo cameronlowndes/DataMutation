@@ -225,3 +225,105 @@ ul {
 .liked .like-button:hover svg {
   fill: transparent;
 }
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  color: #00bcd4;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.like-button:hover {
+  transform: scale(1.05);
+  color: #4dd0e1;
+}
+
+.like-button:active {
+  transform: scale(1.15);
+}
+
+.like-button .like-icon {
+  font-size: 1.4rem;
+}
+
+.like-button .like-count {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #b2ebf2;
+}
+
+.like-button.liked {
+  color: #ff5252;
+}
+
+.like-button.liked .like-count {
+  color: #ff8a80;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  background: #111;
+  color: #eee;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+.post-content h2 {
+  margin: 0 0 0.5rem;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #00bcd4;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.like-button:hover {
+  color: #4dd0e1;
+  transform: scale(1.05);
+}
+
+.like-button:active {
+  transform: scale(1.15);
+}
+
+.like-button.liked {
+  color: #ff5252;
+}
+
+.like-icon {
+  font-size: 1.4rem;
+}
+
+.like-count {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #b2ebf2;
+}
